@@ -10,3 +10,12 @@
 ```
 
 ## 항해99의 킹-메이커
+
+<details>
+<summary>사용 시</summary>
+<div markdown="1">
+
+![사용 시](https://user-images.githubusercontent.com/92674373/162738120-767a6413-d381-4d1d-9f64-171883b3ce8e.JPG)
+
+</div>
+</details>
