@@ -1,2 +1,5 @@
 ## packages
 node_modules
+
+## chromedriver
+chromedriver.exe
