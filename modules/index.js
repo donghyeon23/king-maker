@@ -8,6 +8,7 @@ const rl = readline.createInterface({
 
 class Sailor {
     constructor() {
+        this.inputStatus = false;
         this.round = null;
         this.kakaoEmail = null;
         this.kakaoPassword = null;
@@ -41,6 +42,7 @@ class Sailor {
     insertKakaoPassword() {
         rl.question('카카오 비밀번호를 입력해주세요!', (input) => {
             this.kakaoPassword = input;
+            this.inputStatus = true;
         });
     }
 }
@@ -58,11 +60,7 @@ class KingMaker {
         const chrome = require('selenium-webdriver/chrome');
         const options = new chrome.Options();
 
-        // options.addArguments('--disable-dev-shm-usage');
-        // options.addArguments('--no-sandbox');
         options.addArguments('--headless');
-        // options.addArguments('--single-process');
-        // options.addArguments('--disable-gpu');
 
         this.chromeOptions = options;
     }
