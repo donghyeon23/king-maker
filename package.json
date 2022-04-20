@@ -1,23 +1,30 @@
 {
-  "name": "king-maker",
-  "version": "1.0.0",
-  "description": "항해99 킹-메이커",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/donghyeon23/king-maker.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/donghyeon23/king-maker/issues"
-  },
-  "homepage": "https://github.com/donghyeon23/king-maker#readme",
-  "dependencies": {
-    "node-schedule": "^2.1.0",
-    "selenium-webdriver": "^4.1.1"
-  }
+    "name": "king-maker",
+    "version": "1.0.0",
+    "description": "항해99 킹-메이커",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/donghyeon23/king-maker.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/donghyeon23/king-maker/issues"
+    },
+    "homepage": "https://github.com/donghyeon23/king-maker#readme",
+    "devDependencies": {
+        "@babel/eslint-parser": "^7.17.0",
+        "eslint": "^8.12.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "prettier": "2.6.1"
+    },
+    "dependencies": {
+        "node-schedule": "^2.1.0",
+        "selenium-webdriver": "^4.1.1"
+    }
 }
