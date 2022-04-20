@@ -19,3 +19,28 @@
 
 </div>
 </details>
+<br>
+
+실행 방법
+
+1. Chrome version 에 맞는 ChromeDrvier 설치 후 상위 폴더에 저장
+
+    https://chromedriver.chromium.org/downloads
+
+2. 패키지 설치
+    ```
+    $ npm install
+    ```
+3. 앱 실행
+
+    ```
+    $ node app.js
+    ```
+
+4. 실행 후 정보 입력하기
+    ```
+    예)
+    항해기수를 입력해주세요! 5
+    카카오 이메일을 입력해주세요! test@test.com
+    카카오 비밀번호를 입력해주세요! test
+    ```
