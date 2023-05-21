@@ -96,7 +96,7 @@ class KingMaker {
     }
 
     async checkIn() {
-        const driver = this.LogIn()
+        const driver = this.logIn()
         const checkInBtn = await driver.findElement(By.xpath('//*[@id="timer"]/div/div[2]/div[1]'));
         await checkInBtn.click();
 
@@ -105,7 +105,7 @@ class KingMaker {
     }
 
     async checkOut() {
-        const driver = this.LogIn()
+        const driver = this.logIn()
         const checkOutBtn = await driver.findElement(
             By.xpath('//*[@id="timer"]/div/div[2]/div[2]')
         );
