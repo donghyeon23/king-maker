@@ -65,7 +65,7 @@ class KingMaker {
         this.chromeOptions = options;
     }
 
-    async LogIn(method) {
+    async logIn() {
         let driver = await new Builder()
             .forBrowser('chrome')
             .setChromeOptions(this.chromeOptions)
@@ -91,15 +91,12 @@ class KingMaker {
         );
         await loginBtn2.click();
         await driver.wait(until.elementLocated(By.xpath('//*[@id="rank-table"]')));
-
-        if (method === 'checkIn') {
-            this.checkIn(driver);
-        } else if (method === 'checkOut') {
-            this.checkOut(driver);
-        }
+        
+        return driver
     }
 
-    async checkIn(driver) {
+    async checkIn() {
+        const driver = this.LogIn()
         const checkInBtn = await driver.findElement(By.xpath('//*[@id="timer"]/div/div[2]/div[1]'));
         await checkInBtn.click();
 
@@ -107,7 +104,8 @@ class KingMaker {
         await driver.quit();
     }
 
-    async checkOut(driver) {
+    async checkOut() {
+        const driver = this.LogIn()
         const checkOutBtn = await driver.findElement(
             By.xpath('//*[@id="timer"]/div/div[2]/div[2]')
         );
