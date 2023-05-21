@@ -6,9 +6,9 @@ const kingMaker = new KingMaker(king);
 
 if (king.inputStatus) {
     schedule.scheduleJob('30 59 4 * * *', () => {
-        kingMaker.LogIn('checkIn');
+        kingMaker.checkIn();
     });
     schedule.scheduleJob('0 0 5 * * *', () => {
-        kingMaker.LogIn('checkOut');
+        kingMaker.checkOut();
     });
 }
